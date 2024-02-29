@@ -33,7 +33,7 @@
                     </div>
                   </div>
                 </form>
-                @can('post-create')
+                @can('user-create')
                 <a href="{{route('add.user')}}" class="btn btn-primary">Create User<i class="bi bi-plus"></i> </a>
                 @endcan
               </div>
@@ -70,12 +70,12 @@
                             <td class="jsgrid-cell jsgrid-align-center" style="width: 30px;">
                               
                               
-                              @can('post-edit')
+                              @can('user-edit')
                               <a href="{{url('/user/edit/'.$user->id)}}" style="margin-right: 1rem;">
                                 <span  class="bi bi-pen" style="font-size: 1rem; color: rgb(0,255,0);"></span>
                               </a>
                               @endcan
-                              @can('post-delete')
+                              @can('user-delete')
                               <a href="{{url('/user/delete/'.$user->id)}}">
                                 <span class="bi bi-trash" style="font-size: 1rem; color: rgb(255,0,0);"></span>
                               </a>
